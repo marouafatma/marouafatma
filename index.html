@@ -110,10 +110,9 @@
 
     ga('create', 'UA-45956659-1', 'motherfuckingwebsite.com');
     ga('send', 'pageview');
+    
+    setTimeout(function() { $('#myModal').modal('show'); }, 10000);
 
-    $(window).on('load',function(){
-        $('#myModal').modal('show');
-    });
     function redirectTovideo(){
         window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     }
